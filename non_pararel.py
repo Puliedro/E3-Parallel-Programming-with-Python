@@ -9,7 +9,9 @@ def compute_area(N):
     
     start_time = time.time() # Profiling start
     total_sum = sum(f(i * dx) * dx for i in range(N)) # Making the sum
-    result = 4 * total_sum # The sum calculates 1/4th of the circle, multiply by 4 to get full area
+    
+    # The sum calculates 1/4th of the circle, multiply by 4 to get full area
+    result = 4 * total_sum 
     
     elapsed_time = time.time() - start_time # Profiling end
     print(f"Computed Area for n = {N}: {result}")

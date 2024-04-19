@@ -24,6 +24,7 @@ def compute_area_parallel(N, num_processes):
 
     # The result is scaled by 4 as it seems to be calculating an area under a quarter circle
     result *= 4
+    
     print(f"Computed Area for n = {N} and {num_processes} processes: {result}")
     print(f"Elapsed time for n = {N} and {num_processes} processes: {total_computation_time} seconds\n")
     return result
